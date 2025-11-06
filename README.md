@@ -34,20 +34,6 @@
 | MobileNetV3 (原始) | 92.82% | ~5.5M | 学生模型 |
 | MobileNetV3 (蒸馏) | **94.64%** | ~5.5M | 最优模型 |
 
-## 快速开始
-```bash
-# 安装依赖
-pip install torch torchvision onnx onnxruntime opencv-python
-
-# 训练教师模型
-python train_teacher.py --model resnet50
-
-# 知识蒸馏
-python distillation.py --teacher resnet50 --student mobilenetv3
-
-# 转换ONNX
-python convert_onnx.py --model_path checkpoints/best.pth
-```
 
 ## 数据集
 
