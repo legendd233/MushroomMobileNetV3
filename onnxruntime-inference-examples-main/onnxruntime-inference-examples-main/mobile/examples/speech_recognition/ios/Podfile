@@ -1,0 +1,11 @@
+platform :ios, '13.0'
+
+target 'SpeechRecognition' do
+  use_frameworks!
+
+  pod 'onnxruntime-objc'
+
+  target 'SpeechRecognitionTests' do
+    inherit! :search_paths
+  end
+end

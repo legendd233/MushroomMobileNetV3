@@ -1,0 +1,12 @@
+git+https://github.com/EleutherAI/lm-evaluation-harness.git@cc9778fbe4fa1a709be2abed9deb6180fd40e7e2
+git+https://github.com/intel/intel-extension-for-transformers.git@deef576d6c520a4cab550957c64fec150eadd3fe
+torch
+transformers
+accelerate
+onnx
+onnxruntime
+onnxruntime-extensions; python_version < '3.11'
+datasets
+optimum
+evaluate
+neural-compressor >= 2.3

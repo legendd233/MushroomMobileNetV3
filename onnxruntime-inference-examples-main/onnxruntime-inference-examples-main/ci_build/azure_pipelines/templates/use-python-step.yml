@@ -1,0 +1,12 @@
+parameters:
+- name: pythonVersion
+  type: string
+  default: "3.9"
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: "${{ parameters.pythonVersion }}"
+    addToPath: true
+    architecture: 'x64'
+  displayName: "Use Python ${{ parameters.pythonVersion }}"
